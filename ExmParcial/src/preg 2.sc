@@ -14,3 +14,7 @@ def estrategiaComercial(precio: Double): Double =
 
 def sinAjuste(precio: Double): Double =
   precio
+val preciosConIVA = precios(listaPrecios, preciosIVA)
+val preciosConDescuento = precios(listaPrecios, descuentoPromo)
+val preciosEstrategia = precios(listaPrecios, estrategiaComercial)
+val preciosSinCambio = precios(listaPrecios, sinAjuste)
